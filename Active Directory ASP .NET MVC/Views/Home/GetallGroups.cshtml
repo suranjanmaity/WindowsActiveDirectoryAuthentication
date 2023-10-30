@@ -1,0 +1,23 @@
+﻿@model IEnumerable<ActiveDirectory.Models.Group>
+@{
+    ViewBag.Title = "GetAllGroups";
+}
+<br />
+
+<table class="table table-striped table-bordered">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.GroupName)
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.GroupName)
+            </td>
+
+        </tr>
+    }
+</table>

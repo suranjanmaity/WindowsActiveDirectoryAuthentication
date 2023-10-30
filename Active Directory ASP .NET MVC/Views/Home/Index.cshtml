@@ -1,0 +1,12 @@
+﻿@{
+    ViewBag.Title = "HomePage";
+}
+@*<h2>HomePage</h2>*@
+<br />
+<br />
+<div class="row text-center">
+    <div class="col lg-6">
+        @Html.ActionLink("Users", "GetAllUsers", "Home", null, new { @class = "btn btn-primary" })
+        @Html.ActionLink("Groups", "GetAllGroups", "Home", null, new { @class = "btn btn-primary" })
+    </div>
+</div>
